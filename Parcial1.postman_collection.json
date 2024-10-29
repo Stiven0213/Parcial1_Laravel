@@ -1,0 +1,276 @@
+{
+	"info": {
+		"_postman_id": "c0b30c3d-5a71-4dbe-80c9-5b1f167a5a51",
+		"name": "Parcial1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27905819"
+	},
+	"item": [
+		{
+			"name": "Index_Videojuegos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/videojuegos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"videojuegos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Index_Categoria",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/categorias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categorias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show_Videojuegos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/videojuegos/62",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"videojuegos",
+						"62"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show_Categoria",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/categorias/18",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categorias",
+						"18"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Store_Videojuegos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Metaphor Re-fantazio\",\r\n    \"descripcion\": \"ROL\",\r\n    \"genero\": \"ROL\",\r\n    \"anio_lanzamiento\": 2024,\r\n    \"precio\": 70,\r\n    \"plataforma\": \"PC\",\r\n    \"calificacion\": 4.8,\r\n    \"multijugador\": false,\r\n    \"desarrollador\": \"Altus\",\r\n    \"editor\": \"Stivensito\",  // Agrega el campo editor aquí\r\n    \"categoria_id\": 9\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/videojuegos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"videojuegos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Store_Categoria",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"MMORPG\",\r\n    \"descripcion\": \"Juegos online\",\r\n    \"prioridad\": 1,\r\n    \"activo\": true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/categorias",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categorias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_Videojuegos",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Metaphor Re-fantazio ASDASDASDASDASD\",\r\n    \"descripcion\": \"ROL\",\r\n    \"genero\": \"ROL\",\r\n    \"anio_lanzamiento\": 2024,\r\n    \"precio\": 15,\r\n    \"plataforma\": \"PC\",\r\n    \"calificacion\": 4.8,\r\n    \"multijugador\": false,\r\n    \"desarrollador\": \"Altus\",\r\n    \"editor\": \"Stivensito\",  // Agrega el campo editor aquí\r\n    \"categoria_id\": 9\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/videojuegos/62",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"videojuegos",
+						"62"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_Categoria",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"MMORPG\",\r\n    \"descripcion\": \"Juegos online modificado desde postman\",\r\n    \"prioridad\": 1,\r\n    \"activo\": true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/categorias/18",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categorias",
+						"18"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_Videojuegos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/videojuegos/61",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"videojuegos",
+						"61"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_Categoria",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/categorias/17",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categorias",
+						"17"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
